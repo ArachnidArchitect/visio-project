@@ -26,13 +26,14 @@ let paginator = document.querySelectorAll('.indicators>img')
 rightBtn.addEventListener('click', async()=>{
     await slideIn()
     statementDisplay.innerText = carouselImages[count-1].statement
-    paginator[count-1].style.backgroundColor="black"
-    // imageDisplay.style. backgroundImage = `url('../../assets/carousel_img_${count}.png')`
+    
+
     setTimeout(()=>{
         imageDisplay.style.backgroundPositionX = "0em"
         imageDisplay.style.transition = "background-position-x 1.2s";}, 200);
+
 count<=2?count++:count=1
-console.log(count)
+
 })
 
 // animations
@@ -40,6 +41,21 @@ async function slideIn(){
     imageDisplay.style.backgroundImage = `url('../../assets/carousel_img_${count}.png')`
     imageDisplay.style.backgroundPositionX = "80em"
     imageDisplay.style.transition = "background-position-x 0s";
+    rotatePaginator()
+    
+}
+function rotatePaginator(){
+    paginator[count-1].style.transform = "rotate(-30deg)"
+    paginator[count-1].style.filter = "brightness(70%)"
+    paginator[count-1].style.transition = "all 2s";
+
+    if(count>1){
+        paginator[count-2].style.transform = "rotate(0deg)"
+        paginator[count-2].style.filter = "brightness(100%)"}
+    else{paginator[2].style.transform = "rotate(0deg)"
+        paginator[2].style.filter = "brightness(100%)"
+    }
+    console.log('i work too')
 }
 
 
