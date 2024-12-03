@@ -22,6 +22,7 @@ header{
     width: 100%;
     padding: 0 5em 0 5em;
     transform: translateZ(500);
+    z-index: 10;
 }
 header>div{
     padding: 2em;
@@ -33,7 +34,10 @@ header>div>img{
 #carousel{
     height: 75vh;
     background-image: url(../assets/carousel_img_1.png);
-    background-size: cover;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x:0em;
+    transition: background-position-x 2s;
 }
 .banners{
     position: absolute;
@@ -121,9 +125,17 @@ header>div>img{
     padding: 0 3em 0 3em;
 }
 
+
+/* calling animations */
 .float,.grow,.go-right{
  transition:.2s;
 }
+/* #carousel{
+    animation-name: slide-in;
+    animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction:normal;  
+} */
 
 /* animations */
 .float:hover{
@@ -137,6 +149,17 @@ header>div>img{
 .go-right:hover{
     transform: translate(-4em, 0);
 }
+
+
+
+@keyframes slide-in {
+    from {background-position-x: 80em;;}
+    to {background-position-x: 0;}
+  }
+@keyframes slide-out {
+    from {background-position-x:0;}
+    to {background-position-x:-80em;}
+  }
 
 
 /* media queries */
