@@ -30,7 +30,7 @@ $toggle.on('click', () => {
         console.log('i do work');
     } else {
         $main.css('display', 'none');
-        $overlay.css('display', 'block');
+        $overlay.css('display', 'flex');
     }
 });
 
