@@ -11,6 +11,9 @@ const $rightBtn = $('.go-right');
 const $imageDisplay = $('#carousel');
 const $statementDisplay = $('.carousel-quote');
 const $paginator = $('.indicators>img');
+const $toggle = $('.toggle')
+const $main = $('#main')
+const $overlay = $('#nav-overlay')
 
 // Event listener
 $rightBtn.on('click', async () => {
@@ -18,6 +21,17 @@ $rightBtn.on('click', async () => {
     updateDisplay();
     rotatePaginator();
     count = (count % carouselImages.length) + 1; // Cycles count efficiently
+});
+
+$toggle.on('click', () => {
+    if ($main.css('display') === 'none') {
+        $main.css('display', 'block');
+        $overlay.css('display', 'none');
+        console.log('i do work');
+    } else {
+        $main.css('display', 'none');
+        $overlay.css('display', 'block');
+    }
 });
 
 // Animations

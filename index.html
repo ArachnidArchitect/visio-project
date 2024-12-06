@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,101 +8,154 @@
     <title>Visio | Dynamic Investment Management | Home</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <header>
-        <div>
-            <img src="./assets/logo.png" alt="visio fund logo">
-        </div>
-        <div>
-            <img src="./assets/hamburger_menu.png" class="grow" alt="hamburger menu">
-        </div>
-    </header>
-    <div class="spacer"></div>
-    <div class="sections">
-    <section id="carousel">
-        <div class="banners">
-            <!-- <div class="black-banner"></div> -->
-        <div class="carousel-quote">
-            Look Beyond the ordinary
-        </div>
-        <div class="carousel-arrow go-right">
-            <img src="./assets/carousel_arrow.png" alt="arrow">
-        </div>
-    </div>
-    <div class="indicators">
-        <img src="./assets/indicator.png" class="first_indicator" alt="page indicator">
-        <img src="./assets/indicator.png" alt="page indicator">
-        <img src="./assets/indicator.png" alt="page indicator">
-    </div>
-    </section>
-    <div class="second-wrapper">
-      
-    <section id="about">
-        <div class="about-info"><p>Visio is an investment management firm initially founded by Patrice Moyal in 2003. The nimble, highly focused and dynamic team manage assets across listed strategies for a diversified client base that includes some of the world’s largest and most sophisticated investors. </p></div>
-        <div><img src="./assets/visio_glyphs.png" alt="vision fund glyphs"></div>
-    </section>
-    <section id="plans">
-        <div class="column">
-            <div class="grid">
-                <div class="more_info_boxes float">
-                    <img src="./assets/visio_arrow.png" alt="arrow">
-                    <p>The Visio<br> difference</p>
-                </div>
-                <div class="more_info_boxes float">
-                    <img src="./assets/visio_arrow.png" alt="arrow">
-                    <p>Meet the<br> Visio team</p>
-                </div>
-                <div class="more_info_boxes float">
-                    <img src="./assets/visio_arrow.png" alt="arrow">
-                    <p>Our funds and<br> investments</p>
-                </div>
+    <!-- nav overlay -->
+    <div id="nav-overlay">
+        <header class="overlay-header">
+            <div>
+                <img src="./assets/logo_white.png" alt="visio fund logo">
             </div>
-            
-            <div class="grid">
-                <div class="account-row">
-                    <div class="acc1 account-var darken">
-                        hedge funds
-                        <img src="./assets/visio_arrow.png" alt="arrow">
-                    </div>
-                    <div class="acc2 account-var darken">
-                        unit trusts
-                        <img src="./assets/visio_arrow.png" alt="arrow">
-                    </div>
-                </div>
-                <div class="account-row">
-                    <div class="acc3 account-var darken">
-                        segregated mandates
-                        <img src="./assets/visio_arrow.png" alt="arrow">
-                    </div>
-                    <div class="acc4 account-var darken">
-                        Africa funds
-                        <img src="./assets/visio_arrow.png" alt="arrow">
-                    </div>
-                    
-                </div>
-                <div class="account-row">
-                    <div class="acc5 account-var darken">
-                        funds performance
-                        <img src="./assets/visio_arrow.png" alt="arrow">
-                    </div>
-                    <div class="acc6 account-var darken">
-                        risk management
-                        <img src="./assets/visio_arrow.png" alt="arrow">
-                    </div>
-
-                </div>
+            <div>
+                <img src="./assets/close_menu.png" class="grow toggle" alt="close menu button">
+            </div>
+        </header>
+        <div class="spacer"></div>
+        <div class="overlay-row">
+            <div class="overlay-column">
+                <h3>WHO WE ARE</h3>
+                <a href="">VISIO IN BRIEF</a>
+                <a href=""> VISIO TEAM</a>
+                <a href="">OUR MISSION & VALUES</a>
+                <a href="">INVESTMENT PHILOSOPHY</a>
+                <a href="">INVESTMENT PROCESS</a>
+                <a href="">THE VISIO DIFFERENCE</a>
+                <a href="">RISK MANAGEMENT</a>
+            </div>
+            <div class="overlay-column">
+                <h3>OUR FUNDS</h3>
+                <a href="">HEDGE FUNDS</a>
+                <a href=""> UNIT TRUSTS</a>
+                <a href="">SEGREGATED MANDATES</a>
+                <a href="">IFIXED INCOME FUNDS</a>
+                <a href="">BALANCED FUNDS</a>
+                <a href="">PROPERTY FUNDS</a>
+                <a href="">SHARI'AH FUNDS</a>
+            </div>
+            <div class="overlay-column">
+                <h3>GOVERNANCE</h3>
+                <a href="">RESPONSIBLE INVESTING</a>
+                <a href=""> FIRM'S POLICIES</a>
+                <a href="">PROXY VOTING REGISTER</a>
+            </div>
+            <div class="overlay-column">
+                <a href=""><h3>CONTACT US</h3></a>
             </div>
         </div>
-    </section>
     </div>
-    <footer>
+    <!-- the rest of the code -->
+        <div id="main">
+            <header>
+                <div>
+                    <img src="./assets/logo.png" alt="visio fund logo">
+                </div>
+                <div>
+                    <img src="./assets/hamburger_menu.png" class="grow toggle" alt="hamburger menu">
+                </div>
+            </header>
+            <div class="spacer"></div>
+            <div class="sections">
+                <section id="carousel">
+                    <div class="banners">
+                        <!-- <div class="black-banner"></div> -->
+                        <div class="carousel-quote">
+                            Look Beyond the ordinary
+                        </div>
+                        <div class="carousel-arrow go-right">
+                            <img src="./assets/carousel_arrow.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="indicators">
+                        <img src="./assets/indicator.png" class="first_indicator" alt="page indicator">
+                        <img src="./assets/indicator.png" alt="page indicator">
+                        <img src="./assets/indicator.png" alt="page indicator">
+                    </div>
+                </section>
+                <div class="second-wrapper">
 
-    </footer>
-</div>
-<!-- Add this in the <head> or before your script -->
+                    <section id="about">
+                        <div class="about-info">
+                            <p>Visio is an investment management firm initially founded by Patrice Moyal in 2003. The
+                                nimble, highly focused and dynamic team manage assets across listed strategies for a
+                                diversified client base that includes some of the world’s largest and most sophisticated
+                                investors. </p>
+                        </div>
+                        <div><img src="./assets/visio_glyphs.png" alt="vision fund glyphs"></div>
+                    </section>
+                    <section id="plans">
+                        <div class="column">
+                            <div class="grid">
+                                <div class="more_info_boxes float">
+                                    <img src="./assets/visio_arrow.png" alt="arrow">
+                                    <p>The Visio<br> difference</p>
+                                </div>
+                                <div class="more_info_boxes float">
+                                    <img src="./assets/visio_arrow.png" alt="arrow">
+                                    <p>Meet the<br> Visio team</p>
+                                </div>
+                                <div class="more_info_boxes float">
+                                    <img src="./assets/visio_arrow.png" alt="arrow">
+                                    <p>Our funds and<br> investments</p>
+                                </div>
+                            </div>
 
-<script src="./js/script.js">
+                            <div class="grid">
+                                <div class="account-row">
+                                    <div class="acc1 account-var darken">
+                                        hedge funds
+                                        <img src="./assets/visio_arrow.png" alt="arrow">
+                                    </div>
+                                    <div class="acc2 account-var darken">
+                                        unit trusts
+                                        <img src="./assets/visio_arrow.png" alt="arrow">
+                                    </div>
+                                </div>
+                                <div class="account-row">
+                                    <div class="acc3 account-var darken">
+                                        segregated mandates
+                                        <img src="./assets/visio_arrow.png" alt="arrow">
+                                    </div>
+                                    <div class="acc4 account-var darken">
+                                        Africa funds
+                                        <img src="./assets/visio_arrow.png" alt="arrow">
+                                    </div>
 
-</script>
+                                </div>
+                                <div class="account-row">
+                                    <div class="acc5 account-var darken">
+                                        funds performance
+                                        <img src="./assets/visio_arrow.png" alt="arrow">
+                                    </div>
+                                    <div class="acc6 account-var darken">
+                                        risk management
+                                        <img src="./assets/visio_arrow.png" alt="arrow">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <footer>
+
+                    </footer>
+                </div>
+            </div>
+        
+    </div> <!-- Add this in the <head> or before your script -->
+
+    <script src="./js/script.js">
+
+    </script>
 </body>
+
 </html>
